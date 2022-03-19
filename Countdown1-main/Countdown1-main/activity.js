@@ -33,7 +33,9 @@ booksOrAuthors("author");
   
   /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
     number is positive or negative using a ternary operator (assume the number will never be zero) */
-  
+  const plusOrMinus = (num) => console.log(num > 0 ? "positive" : "negative");
+  plusOrMinus(1);
+  plusOrMinus(-1);
   /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
     the week it is
     i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
