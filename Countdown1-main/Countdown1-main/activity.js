@@ -19,6 +19,11 @@ const addArray = (array, book) => array.push(book);
 addArray(bookList, {title: "asdf", author:"jkl;"});
 console.log(bookList);
 
+//(2)
+const removeBook = (array, book) => array.splice(array.indexOf(book), 1);
+removeBook(bookList, {title: "asdf", author:"jkl;"});
+console.log(bookList);
+
   /* Intermediate Challenge */
   
   /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
