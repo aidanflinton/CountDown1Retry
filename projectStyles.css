@@ -1,0 +1,17 @@
+.headers{
+    color:aqua;
+    padding: 2em 2em 2em 2em;
+    border: 7px lime ridge;
+    text-align: center;
+    background-color: indianred;
+    margin-bottom: 5em;
+    width: 20vw;
+    height: 50px;
+}
+
+#dog-style{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: mediumvioletred;
+    background-color: blanchedalmond;
+    border: 4px red dashed;
+}
