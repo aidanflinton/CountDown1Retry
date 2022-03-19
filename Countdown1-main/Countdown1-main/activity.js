@@ -39,11 +39,48 @@ booksOrAuthors("author");
   /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
     the week it is
     i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
-  
+  const dayODaWeek = (day) => {switch(day){
+    case "Monday":
+      console.log("Jon, I hate Mondays");
+      break;
+    case "Tuesday":
+      console.log("Its tuedsay my dudes");
+      break;
+    case "Wednesday":
+      console.log("Hump day");
+      break;
+    case "Thursday":
+      console.log("Thursdays are alright");
+      break;
+    case "Friday":
+      console.log("TGIF");
+      break;
+    case "Saturday":
+      console.log("Sleeping in...");
+      break;
+    case "Sunday":
+      console.log("Going to church");
+      break;
+    }
+  };
+  dayODaWeek("Monday");
+  dayODaWeek("Tuesday");
+  dayODaWeek("Wednesday");
+  dayODaWeek("Thursday");
+  dayODaWeek("Friday");
+  dayODaWeek("Saturday");
+  dayODaWeek("Sunday");
   /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
     number from 1 up to that number
     ex. sumUp(7) = 28 */
-  
+  const sumUp = (num) => {
+    let sum = 0;
+    for(i = 1; i<=num; i++){
+      sum += i;
+    }
+    console.log(sum);
+  };
+  sumUp(7);
   /* Harder Challenge */
 
   /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
