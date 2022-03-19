@@ -24,6 +24,11 @@ const removeBook = (array, book) => array.splice(array.indexOf(book), 1);
 removeBook(bookList, {title: "asdf", author:"jkl;"});
 console.log(bookList);
 
+//(3)
+const booksOrAuthors = (choice) => bookList.forEach(element => (choice === "title" ? console.log(element.title):console.log(element.author)));
+booksOrAuthors("title");
+booksOrAuthors("author");
+
   /* Intermediate Challenge */
   
   /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
