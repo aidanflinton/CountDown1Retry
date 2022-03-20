@@ -81,15 +81,29 @@ booksOrAuthors("author");
     console.log(sum);
   };
   sumUp(7);
+
   /* Harder Challenge */
 
   /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
     me what I should wear accordingly */
-  
+  const convertTemp = (tempC) => {
+    let tempF = tempC * 9/5 + 32;
+    tempF > 60 ? console.log("its " + tempF +" degrees out, so you should dress in shorts") : console.log("its " + tempF +" degrees out, so you should dress in pants");
+  }
+  convertTemp(0);
+  convertTemp(100);
   /* (8) Write a function that takes in an array and prints out the amount of truthy values in that array
     using .forEach() */
   
   const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
+
+  const isTruthyFalsy = (array) => {
+    let countT = 0, countF = 0;
+    array.forEach(element => element ? countT++ : countF++);
+    console.log(countT);
+  };
+
+  isTruthyFalsy(exampleArray);
   
   /* (9) Using the map function and arrow syntax, return an array of object that contain a fullName field
     and an averageGrade field representing the letter grade that corresponds to their GPA */
@@ -103,6 +117,9 @@ booksOrAuthors("author");
     { firstName: "Jackson", lastName: "Wolf", gpa: 4.0 },
     { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 },
   ];
+
+  let nameGPA = attendance.map((person) => ({fullName: person.firstName +" "+ person.lastName, gpa:person.gpa}));
+  console.log(nameGPA);
 
   /* Hardest Challenge (Don't do this without completing harder challenges) */
 
